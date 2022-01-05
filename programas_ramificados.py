@@ -1,13 +1,17 @@
 def run():
-    num_1 = int(input('Escribe un número entero: '))
-    num_2 = int(input('Escribe otro número entero: '))
+    print('Este programa evalua las edades de dos personas y responde quién es mayor...\n')
+    person_1 = input("Escribe el nombre de la primera persona >>>")
+    age_1 = int(input("Escribe su edad utilizando solo números >>>"))
+    person_2 = input("Escribe el nombre de la segunda persona >>>")
+    age_2 = int(input("Escribe su edad utilizando solo números >>>"))
 
-    if num_1 > num_2:
-        print(num_1, 'es mayor que', num_2)
-    elif num_1 < num_2:
-        print(num_1, 'es menor que', num_2)
+    if age_1 > age_2:
+        print(person_1, 'es mayor que', person_2)
+    elif age_1 < age_2:
+        print(person_1, 'es menor que', person_2)
     else:
-        print('Los dos números son iguales')
+        print(person_1, 'tiene la misma edad que', person_2)
+    
 
 if __name__ == '__main__':
     run()
