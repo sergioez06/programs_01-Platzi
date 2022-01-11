@@ -1,14 +1,13 @@
+import math
+
 def run():
-    objetivo = int(input('Escoge un número entero: '))
-    respuesta = 0
+    numero = int(input('Escribe un número entero: '))
+    respuesta = math.sqrt(numero)
 
-    while respuesta**2 < objetivo:
-        respuesta += 1
-
-    if respuesta**2 == objetivo:
-        print(f'La raiz cuadrada de {objetivo} es {respuesta}')
+    if (math.sqrt(numero) % 1 == 0):
+        print(f'La raiz cuadrada de {numero} es {respuesta}')
     else:
-        print(f'{objetivo} no tiene raiz cuadrada exacta')
+        print(f'{numero} no tiene raiz cuadrada exacta')
 
 if __name__ == '__main__':
     run()
